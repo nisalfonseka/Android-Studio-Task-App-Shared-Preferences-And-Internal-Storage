@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".UpdateTaskActivity">
+
+    <TextView
+        android:id="@+id/editTaskHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins"
+        android:textStyle="bold"
+        android:text="Edit Task"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="176dp"
+        android:layout_height="33dp"
+        android:layout_below="@+id/editTaskHeading"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="203dp"
+        android:fontFamily="@font/poppins"
+        android:text="Task Name"
+        android:textStyle="bold"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/updateTitleEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTaskHeading"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/green_boarder"
+        android:fontFamily="@font/poppins"
+        android:hint="Enter Task Title"
+        android:maxLines="1"
+        android:padding="12dp"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="253dp"
+        android:layout_height="39dp"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="77dp"
+        android:layout_marginEnd="126dp"
+        android:fontFamily="@font/poppins"
+        android:text="Description"
+        android:textColor="@color/darkblue"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/updateTaskContentEditText"
+        android:layout_width="384dp"
+        android:layout_height="98dp"
+        android:layout_below="@+id/updateTitleEditText"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/green_boarder"
+        android:fontFamily="@font/poppins"
+        android:gravity="top"
+        android:hint="Enter Task's Description"
+        android:padding="12dp"
+        android:textSize="18sp" />
+
+
+
+
+    <TextView
+        android:id="@+id/updateDateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateTaskContentEditText"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_boarder"
+        android:fontFamily="@font/poppins"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:text="Select Date" />
+
+    <TextView
+        android:id="@+id/updateStartTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateDateTextView"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_boarder"
+        android:fontFamily="@font/poppins"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:text="Select Start Time" />
+
+    <TextView
+        android:id="@+id/updateEndTimeTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateStartTimeTextView"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/green_boarder"
+        android:fontFamily="@font/poppins"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:text="Select End Time" />
+
+    <Button
+        android:id="@+id/updateSaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/updateEndTimeTextView"
+        android:layout_marginTop="172dp"
+        android:backgroundTint="@color/blue"
+        android:text="Save Task"
+        android:textSize="24sp" />
+</RelativeLayout>
